@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveller Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #1abc9c;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2d3e50;
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .destination-card {
+            background: #f9f9f9;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 300px;
+            padding: 16px;
+            text-align: center;
+        }
+        .destination-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        footer {
+            background: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .destinations {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Traveller Explorer</h1>
+        <p>Discover amazing destinations around the world!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>About Traveller Explorer</h2>
+        <p>
+            Traveller Explorer is your gateway to discovering the most beautiful and exciting places on Earth. Whether you are looking for adventure, relaxation, or cultural experiences, our curated list of destinations will inspire your next journey.
+        </p>
+        <h2>Popular Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Mountains">
+                <h3>Swiss Alps</h3>
+                <p>Experience breathtaking views and world-class skiing in Switzerland's majestic Alps.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80" alt="Beach">
+                <h3>Bali, Indonesia</h3>
+                <p>Relax on pristine beaches and immerse yourself in vibrant Balinese culture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="City">
+                <h3>Paris, France</h3>
+                <p>Explore the romantic city of lights, famous for its art, cuisine, and history.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Traveller Explorer. All rights reserved.
+    </footer>
+</body>
+</html>
